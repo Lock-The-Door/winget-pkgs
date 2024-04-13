@@ -1,0 +1,28 @@
+# Partially created with komac v2.1.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.6.0.schema.json
+
+PackageIdentifier: tailscale.tailscale
+PackageVersion: 1.64.0
+InstallerLocale: en-US
+Scope: machine
+InstallModes:
+- interactive
+- silent
+UpgradeBehavior: install
+ProductCode: Tailscale IPN
+ReleaseDate: 2024-04-11
+Installers:
+- Architecture: x64
+  InstallerType: msi
+  InstallerUrl: https://pkgs.tailscale.com/stable/tailscale-setup-1.64.0-amd64.msi
+  InstallerSha256: 46E61CD7037887F7049373545F07BA31DAFAAF213299AE35FC8A5073332CFCC8
+- Architecture: x86
+  InstallerType: burn
+  InstallerUrl: https://pkgs.tailscale.com/stable/tailscale-setup-full-1.64.0.exe
+  InstallerSha256: 226AEE99A8A1ACC1B8FEC0E12062DD2B1E9F2EC6ACF26C9F2E5C6C82C86B1250
+- Architecture: arm64
+  InstallerType: msi
+  InstallerUrl: https://pkgs.tailscale.com/stable/tailscale-setup-1.64.0-arm64.msi
+  InstallerSha256: 2113A42904168EA49D49A5FEC34FB0E84D043E3E7ED227FC4A842F62874FD544
+ManifestType: installer
+ManifestVersion: 1.6.0
